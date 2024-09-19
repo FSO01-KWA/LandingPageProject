@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>골프 랜딩 페이지</title>
+    <style>
+        @font-face {
+            font-family: 'AppleSDGothicNeo';
+            src: local('Apple SD Gothic Neo');
+        }
+
+        body {
+            font-family: 'AppleSDGothicNeo', Arial, sans-serif;
+            background-color: #FFFFFF; /* 하얀색 배경 */
+            color: #000; /* 검정색 글씨 */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: black;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .section-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .section {
+            background-color: #555; /* 애쉬 블랙 */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            color: white; /* 상자 안의 흰색 글씨 */
+        }
+
+        .section h2 {
+            color: #FFFFFF;
+            font-size: 1.8rem;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #FFD700; /* 노란색 버튼 */
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FFB800;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>'이게 되네...?'</h1>
+        <img src="아무캐릭터.PNG" alt="캐릭터 이미지" />
+        <p>탄탄한 기본, 나만의 필살기, 진정한 프로</p>
+    </header>
+
+    <div class="section-container">
+        <div class="section">
+            <h2>기본기</h2>
+            <p>탄탄한 기본기로 기초를 쌓을 수 있습니다. 모든 것의 시작!</p>
+            <button class="cta-button" onclick="alert('감사합니다!')">계속하기</button>
+        </div>
+
+        <div class="section">
+            <h2>필살기</h2>
+            <p>효율적인 필살기 연습으로 실력을 극대화해 보세요.</p>
+            <button class="cta-button" onclick="alert('감사합니다!')">계속하기</button>
+        </div>
+
+        <div class="section">
+            <h2>Go프로</h2>
+            <p>전문가처럼 플레이하고 싶은 당신을 위한 Go프로 패키지!</p>
+            <button class="cta-button" onclick="alert('감사합니다!')">계속하기</button>
+        </div>
+    </div>
+
+</body>
+</html>
